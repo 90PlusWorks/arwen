@@ -111,10 +111,13 @@ function left()
   if(pickArt>1)
   {
     pickArt -=1;
-    var scrollContainer = document.getElementById("artMenu");
-    scrollContainer.scrollLeft = pickArt*100;
-    pickArtFunc(pickArt);
   }
+  if(pickArt>4)
+  {
+    var scrollContainer = document.getElementById("artMenu");
+    scrollContainer.scrollLeft = (pickArt-2)*116-350;
+  }
+  pickArtFunc(pickArt);
   window.scrollTo(0,0);
 }
 function right()
@@ -122,10 +125,10 @@ function right()
   if(pickArt<maxImages-2)
   {
     pickArt +=1;
-    var scrollContainer = document.getElementById("artMenu");
-    scrollContainer.scrollLeft = pickArt*100;
-    pickArtFunc(pickArt);
   }
+    var scrollContainer = document.getElementById("artMenu");
+    scrollContainer.scrollLeft = (pickArt-2)*116-350;
+    pickArtFunc(pickArt);
   window.scrollTo(0,0);
 }
 function pickArtFunc(pickArt)
