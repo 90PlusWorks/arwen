@@ -93,28 +93,40 @@ scrollContainer.addEventListener('click', (ev) => {
 function begin()
 {
   pickArt =0;
+  var scrollContainer = document.getElementById("artMenu");
+    scrollContainer.scrollLeft = 0;
   pickArtFunc(pickArt);
+  window.scrollTo(0,0);
 }
 function end()
 {
   pickArt =maxImages-2;
+  var scrollContainer = document.getElementById("artMenu");
+    scrollContainer.scrollLeft = pickArt*100;
   pickArtFunc(pickArt);
+  window.scrollTo(0,0);
 }
 function left()
 {
   if(pickArt>1)
   {
     pickArt -=1;
+    var scrollContainer = document.getElementById("artMenu");
+    scrollContainer.scrollLeft = pickArt*100;
     pickArtFunc(pickArt);
   }
+  window.scrollTo(0,0);
 }
 function right()
 {
   if(pickArt<maxImages-2)
   {
     pickArt +=1;
+    var scrollContainer = document.getElementById("artMenu");
+    scrollContainer.scrollLeft = pickArt*100;
     pickArtFunc(pickArt);
   }
+  window.scrollTo(0,0);
 }
 function pickArtFunc(pickArt)
 {
