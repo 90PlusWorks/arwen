@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "SU-raleway";
+  src: url('font/SU-raleway-black.ttf') format('truetype');
+  src: url('font/SU-raleway-medium.ttf') format('truetype');
+  src: url('font/SU-raleway-bold.ttf') format('truetype');
+  src: url('font/SU-raleway-regular.ttf') format('truetype');
+} 
+html, body {
+width: 100%;
+$brand-maroon: #60223b;
+$brand-gray: #8c979a;
+$brand-gold: #967140;
+$brand-maroon-light: rgb(255,210,220);
+$brand-gray-light: rgb(232,250,255);
+$brand-gold: rgb(255,230,200);
+font-family: Tahoma, Menlo, Courier, Tahoma, sans-serif;
+font-size: 15px;
+}
+
+#mainParent {
+
+background-color: #60223b;
+width: 100%;
+height: 50%;
+font-family: "SU-raleway", Calibri, Tahoma, sans-serif;
+
+}
+* {
+
+margin: 0;
+
+}
+#mainParent {
+  background-color: #60223b;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border: 1px;
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 20%; /* Full width (cover the whole page) */
+  height: 20%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#clickMe {
+    -moz-appearance: button;
+    -ms-appearance: button;
+    -o-appearance: button;
+    -webkit-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: #60223b;
+    padding: 0.2em 0.4em;
+}
+
+.chart_container {
+   float: left;
+}
+
+
+.resizedTextbox {width: 80px; height: 18px}
+.resizedTextbox2 {width: 120px; height: 18px}
+.smallTextbox {width: 40px; height: 18px}
+##div2 {
+  height: 20%;
+  overflow: auto;
+}
+
+#Manifest {
+  border-spacing: 0;
+  width: 100%;
+  height: 20%px;
+  border: 1px solid #ddd;
+  table-layout: fixed;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0px;
+}
+
+thead tr th {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(255,210,220);
+}
+
+\
+
+/*Data Update Button */
+.updateBtn{
+	text-align: center;
+}
+.updateBtn button{
+	background-color: #60223b;
+	color: rgb(255,210,220);
+	border: 1px solid black;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+.updateBtn button:hover{
+	background: rgb(232,250,255);;
+	color: black;
+	transition: .5s;
+}
+
+/*Data Update Table*/
+.editTable{
+	display: none;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.editRowBtn{
+	background-color: #60223b;
+	color: rgb(255,210,220);
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.editRowBtn:hover{
+	background-color: #967140;
+	color: rgb(255,230,200);
+	transition: .5s;
+}
+.BtnG{
+	background-color: #993333;
+	color: rgb(255,210,220);
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.BtnG:hover{
+	background-color: #ccaaaa;
+	color: rgb(255,230,200);
+	transition: .5s;
+}
+.BtnGF{
+	background-color: #339933;
+	color: rgb(255,210,220);
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.BtnGF:hover{
+	background-color: #aaccaa;
+	color: rgb(255,230,200);
+	transition: .5s;
+}
+.pdfBtn{
+	background-color: #f40f02;
+	color: #000;
+	border: 3px solid red;
+	padding: 0px 0px;
+	border-radius: 4px;
+}
+.pdfBtn:hover{
+	background-color: #e77;
+	color: #000;
+	transition: .5s;
+}
+.editRowBtnDep{
+	background-color: #60223b;
+	color: rgb(255,210,220);
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	width: 280px;
+}
+.editRowBtnDep:hover{
+	background-color: #967140;
+	color: rgb(255,230,200);
+	transition: .2s;
+}
+
+
