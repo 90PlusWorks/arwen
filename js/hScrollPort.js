@@ -61,7 +61,7 @@ function updateArt()
   var scrollContainer = document.getElementById("artMenu");
 var scrollPos = 0;
 scrollContainer.addEventListener("wheel", (evt) => {
-    //evt.preventDefault();
+    evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
 });
 var buttons = "<table><tr>";
