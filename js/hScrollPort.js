@@ -15,6 +15,7 @@ var started = Date.now();
 
       // and then pause it
       show();
+      pickArtFunc(0);
       clearInterval(interval);
     } else {
 
@@ -25,6 +26,7 @@ var started = Date.now();
   }, 1000); // every 1000 milliseconds
 
 const dir = './artwork/artwork';
+const dir2 = './assets/';
 const Img = new Image();
 var cnt =0;
 var maxImages = 1;
@@ -88,10 +90,37 @@ scrollContainer.addEventListener('click', (ev) => {
     pickArtFunc(pickArt);
     window.scrollTo(0,0);
   });
-
+function begin()
+{
+  pickArt =0;
+  pickArtFunc(pickArt);
+}
+function end()
+{
+  pickArt =maxImages-2;
+  pickArtFunc(pickArt);
+}
+function left()
+{
+  if(pickArt>1)
+  {
+    pickArt -=1;
+    pickArtFunc(pickArt);
+  }
+}
+function right()
+{
+  if(pickArt<maxImages-2)
+  {
+    pickArt +=1;
+    pickArtFunc(pickArt);
+  }
+}
 function pickArtFunc(pickArt)
 {
   let art = pickArt*1+1;
   let url = "<img src="+dir+art+".jpg />";
   document.getElementById("artShow").innerHTML = url;
+  let url2 = "<img src="+dir2+"begin.png onclick='begin()' class = 'arrows' /><img src="+dir2+"left.png onclick='left()' class = 'arrows' /><img src="+dir2+"right.png onclick='right()' class = 'arrows'' /><img src="+dir2+"end.png onclick='end()' class = 'arrows' />";
+  document.getElementById("artControl").innerHTML = url2;
 }
