@@ -1,0 +1,96 @@
+<!-- is how to start a comment. 
+This is a comment in HTML. It helps to explain what was coded.
+Comments end like this: -->
+<!-- Below in lines 10 to 20 we have some standard HTML 
+I.e. you can copy this to a new html to get started.
+"Tag" for: <!doctype> & "Container tags" for: language<html lang="en">, 
+headings<head>, Page title<title>, <author> and 
+metadata<meta description keywords> for search engines.-->
+<!-- "Container tags" have a ON tag:<head>Contents, incl tags & OFF tag</head> -->
+<!DOCTYPE html>
+<html lang="en">
+	<head> <!-- indented to show that we must end this tab before the <html> tab! -->
+	  <!-- indented to show as child of <head> -->
+    <title>: ART Portfolio © Copyright 2020 by 90PlusWorks</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Artist Bio Portfolio">
+    <meta name="keywords" content="Art, Artist, Personal, Social, Portfolio, Gallery, Wall Art, Artwork, Painting, Sculpture, Value, Emotion, Meaning, Abstract, Realism, Colour, Texture, Creative, Design, Visualization, Perspective, Tone, Canvas, Oil, Paint, Pastel, Material,Composition, Form, Shape, Mood, Wood, Metal, Paper">
+    <meta name="author" content="Theuns Dirkse-van Schalkwyk">
+    <!-- Go to https://www.geeksforgeeks.org/difference-between-html-and-css/?ref=lbp to learn basic html and css! -->
+    <link rel="stylesheet" href="css/styleNewPack.css">
+  </head><!-- Observe <html> container tag is not yet OFF -->
+  <body> <!-- indented similar to <head> -->
+  <!-- <script> "container tag" starts a javascript code section -->
+  <script> 
+    var wh = window.innerWidth;
+    var wh2 = window.innerHeight;
+    var artHeight = wh2-100;
+    var wwh = Math.floor(wh/2)+4;
+    var wwh2 = Math.floor(wh2/2.3);
+    // Launch full screen
+  </script>
+    <script defer src="js/hScrollPort.js"></script>
+    <!-- End of js "container tag"; back to html -->
+    </head>
+    <body>
+  <div id="mainParent">
+    <p style="background-color:rgb(230,230,230); color:#60223b;">
+   </div>
+  <style>
+  :root {
+    --artHeightCss: 600;
+    --artWidthCss: 800;
+}
+    #artShow {
+    overflow-y: hidden;
+    }
+    #artMenu {
+      overflow-x: hidden; /*or overflow-x:scroll or hidden*/
+      height: 110px;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+    }
+    #ArtCounter {
+      
+    }
+    #td {
+      height: 15px;
+    }
+    .center {
+      max-height: var(--artHeightCss);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+img {
+  max-height: var(--artHeightCss);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+  </style>
+        
+  <div id="header" style = "background-color:rgb(232,232,232); height: wwh2 + "px";"> <!-- Division tag ON; may contain child <div>'s -->
+    <!-- Black screen background for threejs 
+    <div id="ThreeJS" style="position: absolute; right:0px; bottom:0px"></div>-->
+    <p id="demo"></p>
+    <div id="ArtCounter"></div>
+    <div id="artMenu"></div><br><br>
+    <div id="artShow"></div>
+    <div id="artistInfo" class = "center"><br><br>
+    <h1>Artist Info:</h1>
+    I'm <strong>ARWEN</strong> and I'm an imaginary multi-medium artist based in the universe.<br><br> After graduating from the <strong>Western Desert Acadamy of Art</strong>, I began my freelancing career by creating commercial art in wood carving of sarcophagi for the royal family and their printing industry. I've been creating commissions for thousands of years and have been in the employ of Pharaoh Ramesses II from 1230 to 1213 BC. Some work I consulted on or helped with during the ages are shown here. I currently do artwork and consulting for popular businesses such as <strong> Random Glow </strong> and <strong>Them drop-dead Apples</strong>.<br><br> I also love creating custom artwork for ordinary people such as Juan, Ren, Aam, John and Jane.
+I enjoy working with others to create a social experience and interconnected artworks. <br><br>In my free time, I like to swing on silk curtains while binge-watching my favorite TV shows.<br><br> I'm open for commissions. Please email me at <strong>Arwen@protonmail.com</strong> to share your commission request and learn more about my art process.</div><br><br>
+    
+    <div id="About" style = "background-color:rgb(232,232,232);">
+      <img src="./artwork/artwork0.jpg" class="center"></div>
+  </body>
+</html>
